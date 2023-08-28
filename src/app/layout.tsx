@@ -12,13 +12,13 @@ const siteName = 'Ronny Rook';
 
 export const metadata = {
   title: {
-    default: `About me | ${siteName}`,
+    default: `Webshop op maat | ${siteName}`,
     template: `%s | ${siteName}`,
   },
-  description: 'Javascript developer from Amsterdam',
+  description: 'Op zoek naar een Shopify webshop op maat? Ronny Rook is Shopify expert en helpt je graag!',
   openGraph: {
     title: siteName,
-    description: 'Javascript developer from Amsterdam',
+    description: 'Op zoek naar een Shopify webshop op maat? Ronny Rook is Shopify expert en helpt je graag!',
     url: 'https://rnny.nl',
     siteName,
     images: [
