@@ -64,7 +64,7 @@ const Layout = ({ children }: Props) => {
   return (
     <html
       lang="en"
-      className={cn('text-black bg-white dark:text-white dark:bg-[#111111]', inter.className)}
+      className={cn('text-black bg-white', inter.className)}
     >
       <head />
       <RootLayout>{children}</RootLayout>
