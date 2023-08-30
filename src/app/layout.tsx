@@ -1,12 +1,15 @@
 import './global.css';
 
 import type * as i from 'types';
-import { Inter } from 'next/font/google';
+import { IBM_Plex_Serif } from 'next/font/google';
 
 import { cn } from 'utils';
 import { RootLayout } from 'modules/layouts/RootLayout';
 
-const inter = Inter({ subsets: ['latin'] });
+const ibmSerif = IBM_Plex_Serif({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
 
 const siteName = 'Ronny Rook';
 
@@ -15,10 +18,12 @@ export const metadata = {
     default: `Webshop op maat | ${siteName}`,
     template: `%s | ${siteName}`,
   },
-  description: 'Op zoek naar een Shopify webshop op maat? Ronny Rook is Shopify expert en helpt je graag!',
+  description:
+    'Op zoek naar een Shopify webshop op maat? Ronny Rook is Shopify expert en helpt je graag!',
   openGraph: {
     title: siteName,
-    description: 'Op zoek naar een Shopify webshop op maat? Ronny Rook is Shopify expert en helpt je graag!',
+    description:
+      'Op zoek naar een Shopify webshop op maat? Ronny Rook is Shopify expert en helpt je graag!',
     url: 'https://rnny.nl',
     siteName,
     images: [
@@ -28,7 +33,7 @@ export const metadata = {
         height: 1080,
       },
     ],
-    locale: 'en-US',
+    locale: 'nl-NL',
     type: 'website',
   },
   robots: {
@@ -64,7 +69,7 @@ const Layout = ({ children }: Props) => {
   return (
     <html
       lang="en"
-      className={cn('text-black bg-white', inter.className)}
+      className={cn('text-black bg-white', ibmSerif.className)}
     >
       <head />
       <RootLayout>{children}</RootLayout>

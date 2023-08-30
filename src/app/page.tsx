@@ -1,19 +1,15 @@
+import { Heading } from 'common/typography/Heading';
+
 const Home = () => {
   return (
     <section>
-      <article>
-        <h1>Op zoek naar een goedkope webshop op maat?</h1>
+      <article className="max-w-[40rem]">
+        <Heading className="mb-4">Op zoek naar een goedkope webshop op maat?</Heading>
         <p className="mb-4">
-          Zoek niet verder! 
+          Hier ben je aan het juiste adres! Verkoop snel je gewenste spullen met een volledig op
+          maat gemaakte Shopify webshop.
         </p>
       </article>
-
-      <footer>
-        <p className="text-slate-600 text-xs italic">
-          This website is build with React / NextJS 13 (app dir, @next/font), PNPM, Tailwind, Framer
-          Motion and TypeScript
-        </p>
-      </footer>
     </section>
   );
 };
