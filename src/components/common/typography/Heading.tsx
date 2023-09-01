@@ -22,7 +22,7 @@ export const Heading = ({ as, className, children, color, size }: HeadingProps) 
   }
 
   if (as === 'h2') {
-    return <h2 className={`${classes} text-2xl`}>{children}</h2>;
+    return <h2 className={`${classes} text-3xl`}>{children}</h2>;
   }
 
   return <h1 className={`${classes} text-4xl`}>{children}</h1>;
