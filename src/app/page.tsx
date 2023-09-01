@@ -1,3 +1,4 @@
+import { Box } from 'common/layout/Box';
 import { Heading } from 'common/typography/Heading';
 
 const Home = () => {
@@ -8,44 +9,43 @@ const Home = () => {
       </figure>
 
       <section className="py-20 max-w-4xl mx-auto">
-        <div className="w-full flex">
-          <article className="max-w-[32rem] mb-40">
+        <div className="relative w-full flex">
+          <article className="relative z-20 max-w-[32rem] py-40 ml-40">
             <Heading
               as="h2"
-              className="mb-4"
+              className="mb-6"
             >
               Op zoek naar een goedkope webshop op maat?
             </Heading>
-            <p className="mb-4">
+            <p>
               Hier ben je aan het juiste adres! Verkoop snel je gewenste spullen met een volledig op
               maat gemaakte Shopify webshop.
             </p>
           </article>
+
+          <Box className="z-10 top-2/4 -left-12 -translate-y-2/4" />
         </div>
 
-        <div className="w-full flex justify-end">
-          <article className="max-w-[32rem] mb-40">
+        <div className="relative w-full flex justify-end">
+          <article className="relative z-20 max-w-[32rem] py-40 text-right mr-40">
             <Heading
               as="h2"
-              className="mb-4"
+              className="mb-6"
             >
               Wat is Shopify?
             </Heading>
-            <p className="mb-4">
+            <p>
               Hier ben je aan het juiste adres! Verkoop snel je gewenste spullen met een volledig op
               maat gemaakte Shopify webshop.
             </p>
           </article>
+
+          <Box className="z-10 top-2/4 -right-12 -translate-y-2/4" />
         </div>
 
         <div className="w-full flex justify-center">
-          <article className="max-w-[32rem]">
-            <Heading
-              as="h2"
-              className="mb-4"
-            >
-              Vrijblijvend een webshop aanvragen
-            </Heading>
+          <article className="max-w-[32rem] pt-40">
+            <Heading as="h2">Vrijblijvend een webshop aanvragen</Heading>
           </article>
         </div>
       </section>

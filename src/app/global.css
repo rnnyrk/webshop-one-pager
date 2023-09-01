@@ -9,6 +9,7 @@
 
 html {
   min-width: 360px;
+  font-size: 1.2rem;
 }
 
 code[class*='language-'],
